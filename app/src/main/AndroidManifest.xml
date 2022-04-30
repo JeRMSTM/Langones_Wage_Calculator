@@ -8,6 +8,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Langones_Wage_Calculator"></application>
+        android:theme="@style/Theme.Langones_Wage_Calculator">
+        <activity
+            android:name=".View.output"
+            android:exported="false" />
+        <activity
+            android:name=".View.input"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
 
 </manifest>

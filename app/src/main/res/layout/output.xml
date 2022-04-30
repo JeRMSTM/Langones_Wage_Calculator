@@ -75,11 +75,11 @@
         android:fontFamily="@font/genshinfont"
         android:text="@string/totalwage"
         android:textSize="23sp"
-        app:layout_constraintBottom_toBottomOf="@+id/outputtotalwage"
-        app:layout_constraintEnd_toStartOf="@+id/outputtotalwage"
+        app:layout_constraintBottom_toBottomOf="@+id/totalWageOutput"
+        app:layout_constraintEnd_toStartOf="@+id/totalWageOutput"
         app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/outputtotalwage"
+        app:layout_constraintTop_toTopOf="@+id/totalWageOutput"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -89,11 +89,11 @@
         android:fontFamily="@font/genshinfont"
         android:text="@string/regularwage"
         android:textSize="23sp"
-        app:layout_constraintBottom_toBottomOf="@+id/outputregularwage"
-        app:layout_constraintEnd_toStartOf="@+id/outputregularwage"
-        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintBottom_toBottomOf="@+id/regularWageOutput"
+        app:layout_constraintEnd_toStartOf="@+id/regularWageOutput"
+        app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/outputregularwage"
+        app:layout_constraintTop_toTopOf="@+id/regularWageOutput"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
@@ -103,12 +103,12 @@
         android:fontFamily="@font/genshinfont"
         android:text="@string/overtimewage"
         android:textSize="23sp"
-        app:layout_constraintBottom_toBottomOf="@+id/outputovertimewage"
-        app:layout_constraintEnd_toStartOf="@+id/outputovertimewage"
-        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintBottom_toBottomOf="@+id/overtimeWageOutput"
+        app:layout_constraintEnd_toStartOf="@+id/overtimeWageOutput"
+        app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/outputovertimewage"
-        app:layout_constraintVertical_bias="1.0"  />
+        app:layout_constraintTop_toTopOf="@+id/overtimeWageOutput"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/text8"
@@ -117,11 +117,11 @@
         android:fontFamily="@font/genshinfont"
         android:text="@string/hours"
         android:textSize="23sp"
-        app:layout_constraintBottom_toBottomOf="@+id/outputhours"
-        app:layout_constraintEnd_toStartOf="@+id/outputhours"
-        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintBottom_toBottomOf="@+id/hoursOutput"
+        app:layout_constraintEnd_toStartOf="@+id/hoursOutput"
+        app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/outputhours"
+        app:layout_constraintTop_toTopOf="@+id/hoursOutput"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -131,15 +131,15 @@
         android:fontFamily="@font/genshinfont"
         android:text="@string/overtime"
         android:textSize="23sp"
-        app:layout_constraintBottom_toBottomOf="@+id/outputovertime"
-        app:layout_constraintEnd_toStartOf="@+id/outputovertime"
-        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintBottom_toBottomOf="@+id/overtimeOutput"
+        app:layout_constraintEnd_toStartOf="@+id/overtimeOutput"
+        app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/outputovertime"
+        app:layout_constraintTop_toTopOf="@+id/overtimeOutput"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/outputname"
+        android:id="@+id/nameOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/outputcustom"
@@ -153,7 +153,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/outputemployeetype"
+        android:id="@+id/employeeTypeOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/outputcustom"
@@ -167,7 +167,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/outputtotalwage"
+        android:id="@+id/totalWageOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -179,49 +179,67 @@
         app:layout_constraintTop_toBottomOf="@+id/text2" />
 
     <TextView
-        android:id="@+id/outputregularwage"
+        android:id="@+id/regularWageOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="@string/outputcustom"
         android:textSize="23sp"
-        app:layout_constraintEnd_toEndOf="@+id/outputtotalwage"
+        app:layout_constraintEnd_toEndOf="@+id/totalWageOutput"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/outputtotalwage"
-        app:layout_constraintTop_toBottomOf="@+id/outputtotalwage" />
+        app:layout_constraintStart_toStartOf="@+id/totalWageOutput"
+        app:layout_constraintTop_toBottomOf="@+id/totalWageOutput" />
 
     <TextView
-        android:id="@+id/outputovertimewage"
+        android:id="@+id/overtimeWageOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:text="@string/outputcustom"
         android:textSize="23sp"
-        app:layout_constraintEnd_toEndOf="@+id/outputregularwage"
+        app:layout_constraintEnd_toEndOf="@+id/regularWageOutput"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/outputregularwage"
-        app:layout_constraintTop_toBottomOf="@+id/outputregularwage" />
+        app:layout_constraintStart_toStartOf="@+id/regularWageOutput"
+        app:layout_constraintTop_toBottomOf="@+id/regularWageOutput" />
 
     <TextView
-        android:id="@+id/outputhours"
+        android:id="@+id/hoursOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="@string/outputcustom"
         android:textSize="23sp"
-        app:layout_constraintEnd_toEndOf="@+id/outputovertimewage"
-        app:layout_constraintStart_toStartOf="@+id/outputovertimewage"
-        app:layout_constraintTop_toBottomOf="@+id/outputovertimewage" />
+        app:layout_constraintEnd_toEndOf="@+id/overtimeWageOutput"
+        app:layout_constraintStart_toStartOf="@+id/overtimeWageOutput"
+        app:layout_constraintTop_toBottomOf="@+id/overtimeWageOutput" />
 
     <TextView
-        android:id="@+id/outputovertime"
+        android:id="@+id/overtimeOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="@string/outputcustom"
         android:textSize="23sp"
-        app:layout_constraintEnd_toEndOf="@+id/outputhours"
-        app:layout_constraintStart_toStartOf="@+id/outputhours"
-        app:layout_constraintTop_toBottomOf="@+id/outputhours" />
+        app:layout_constraintEnd_toEndOf="@+id/hoursOutput"
+        app:layout_constraintStart_toStartOf="@+id/hoursOutput"
+        app:layout_constraintTop_toBottomOf="@+id/hoursOutput" />
+
+    <Button
+        android:id="@+id/returnBTN"
+        android:layout_width="161dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="28dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="@font/genshinfont"
+        android:gravity="center"
+        android:text="@string/returnbutton"
+        android:textColor="@color/color1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/overtimeOutput"
+        app:layout_constraintVertical_bias="0.229" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

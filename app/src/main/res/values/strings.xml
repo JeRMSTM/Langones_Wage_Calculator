@@ -14,4 +14,11 @@
     <string name="hours">Hours</string>
     <string name="overtime">Overtime</string>
     <string name="outputcustom">Result</string>
+    <string name="returnbutton">Return</string>
+    
+    <string-array name="employeetypes">
+        <item>Regular</item>
+        <item>Probationary</item>
+        <item>Part-time</item>
+    </string-array>
 </resources>
